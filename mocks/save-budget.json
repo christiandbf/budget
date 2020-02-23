@@ -1,0 +1,62 @@
+{
+  "body": "{\n\t\"user\": 1,\n\t\"category\": \"food\",\n\t\"amount\": 400000\n}",
+  "headers": {
+    "Host": "localhost:3000",
+    "User-Agent": "insomnia/6.6.0",
+    "Content-Type": "application/json",
+    "Accept": "*/*",
+    "Content-Length": "54"
+  },
+  "httpMethod": "POST",
+  "multiValueHeaders": {
+    "Host": [
+      "localhost:3000"
+    ],
+    "User-Agent": [
+      "insomnia/6.6.0"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Accept": [
+      "*/*"
+    ],
+    "Content-Length": [
+      "54"
+    ]
+  },
+  "multiValueQueryStringParameters": null,
+  "path": "/budgets",
+  "pathParameters": null,
+  "queryStringParameters": null,
+  "requestContext": {
+    "accountId": "offlineContext_accountId",
+    "apiId": "offlineContext_apiId",
+    "authorizer": {
+      "principalId": "offlineContext_authorizer_principalId"
+    },
+    "httpMethod": "POST",
+    "identity": {
+      "accountId": "offlineContext_accountId",
+      "apiKey": "offlineContext_apiKey",
+      "caller": "offlineContext_caller",
+      "cognitoAuthenticationProvider": "offlineContext_cognitoAuthenticationProvider",
+      "cognitoAuthenticationType": "offlineContext_cognitoAuthenticationType",
+      "cognitoIdentityId": "offlineContext_cognitoIdentityId",
+      "cognitoIdentityPoolId": "offlineContext_cognitoIdentityPoolId",
+      "sourceIp": "127.0.0.1",
+      "user": "offlineContext_user",
+      "userAgent": "insomnia/6.6.0",
+      "userArn": "offlineContext_userArn"
+    },
+    "protocol": "HTTP/1.1",
+    "requestId": "offlineContext_requestId_ck6y7ss020001953z8cpyatb2",
+    "requestTimeEpoch": 1582412924888,
+    "resourceId": "offlineContext_resourceId",
+    "resourcePath": "/budgets",
+    "stage": "dev"
+  },
+  "resource": "/budgets",
+  "stageVariables": null,
+  "isOffline": true
+}

@@ -1,0 +1,10 @@
+post-budget:
+  name: post-budget-${self:provider.stage}
+  handler: lambdas/handler.postBudget
+  description: Save a new budget
+  memorySize: 128
+  timeout: 10
+  provisionedConcurrency: 10
+  reservedConcurrency: 50
+  events:
+    - http: POST budgets

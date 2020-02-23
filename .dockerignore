@@ -1,0 +1,10 @@
+# Ignore everything
+**
+
+# Allow files and directories
+!/package*.json
+!controllers/**
+!models/**
+!lambdas/handler.js
+!config.js
+!constant.js

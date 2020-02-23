@@ -1,0 +1,30 @@
+{
+  "name": "budget",
+  "version": "1.0.0",
+  "description": "An easy way to manage your money",
+  "author": "Christian Barrios <christiandbf@hotmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "mongoose": "^5.9.2"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.624.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "serverless": "1.64.0",
+    "serverless-offline": "^5.12.1"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "dev": "nodemon --exec serverless offline",
+    "deploy:dev": "serverless deploy",
+    "deploy:test": "serverless deploy --stage test",
+    "deploy:prod": "serverless deploy --stage prod",
+    "test": "jest"
+  }
+}

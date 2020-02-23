@@ -1,0 +1,30 @@
+service: budget
+
+frameworkVersion: "1.64.0"
+
+# TODO: add plugins for documentation and request validation
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'us-east-1'}
+  environment: ${file(env.yml):${self:provider.stage}}
+
+package:
+  individually: true
+  exclude:
+    - ./**
+    - '!controllers/**'
+    - '!exceptions/**'
+    - '!lambdas/handler.js'
+    - '!models/**'
+    - '!node_modules/**'
+    - '!config.js'
+    - '!constant.js'
+
+# Add functions
+functions:
+  - ${file(lambdas/config.yml)}
